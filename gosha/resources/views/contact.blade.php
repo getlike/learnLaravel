@@ -7,8 +7,7 @@
 @section('content')
     <h1>контакты</h1>
     <form action="{{ route('contact-form') }}" method="POST">
-        @csrf
-
+        {{csrf_field()}}
         <div class="form-group">
             <label for="name">Введите имя</label>
             <input type="text" name="name" placeholder="Введите имя" id="name" class="form-control">
